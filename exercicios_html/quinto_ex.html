@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Quinto Exercício</h1>
+    <h3>Álcool ou Gasolina?</h3>
+    <script>
+        // criando variáveis
+
+        var tanque = 40;
+        var caminhoComGasolina = 480;
+        var consumoDeGasolina = caminhoComGasolina / tanque;
+        var caminhoComAlcool = 300;
+        var consumoDeAlcool = caminhoComAlcool/ tanque;
+
+        // construindo as frases
+        document.write("O consumo de gasolina é de " + consumoDeGasolina + " km por litro.<br>");
+        document.write("O consumo de álcool é de " + consumoDeAlcool + " km por litro.<br>");
+
+        // descobrindo o preço por km
+
+        var precoDaGasolina = 6.09
+        var precoDoAlcool = 4.19
+
+        var precoPorKilometroGasolina = precoDaGasolina / consumoDeGasolina
+        var precoPorKilometroAlcool = precoDoAlcool / consumoDeAlcool
+        document.write("O preço por km da gasolina é de " + precoPorKilometroGasolina.toFixed(2) + "<br>");
+        document.write("O preço por km do alcool é de " + precoPorKilometroAlcool.toFixed(2) + "<br>");
+    </script>
+    <h3>Lidando com decimais</h3>
+    <script>
+        var numeroDecimal = 12.3147;
+        // Math.round arredonda para inteiro
+        document.write("Math.round(numeroDecimal): " + Math.round(numeroDecimal) + "<br>");
+
+        // toFixed(n) arredonda mantendo n casas decimais
+        document.write("numeroDecimal.toFixed(2): " + numeroDecimal.toFixed(2));
+    </script>
+
+</body>
+</html>
