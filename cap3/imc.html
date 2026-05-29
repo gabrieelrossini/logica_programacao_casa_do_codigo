@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        // pular uma linha a cada frase
+        var pulaLinha = function() {
+            document.write("<br>");
+        };
+        // colocar uma frase como variável e aplicar função pulaLinha
+        var mostra = function(frase) {
+            document.write(frase);
+            pulaLinha();
+        };
+        // calcular o imc e aplicar a função mostra
+        var calculaIMC = function(altura, peso) {
+            var imc = peso / (altura * altura);
+            return imc;
+        };
+        // aplicação de calculaIMC com variáveis pré existentes
+        var alturaAtual = 1.74;
+        var pesoAtual = 89;
+        var imcAtual = calculaIMC(alturaAtual, pesoAtual);
+        mostra("O imc atual é de " + imcAtual.toFixed(2));
+        mostra("resultado está " + (imcAtual - 18.5).toFixed(2) + " pontos acima do limite da magreza");
+    </script>
+</body>
+</html>
