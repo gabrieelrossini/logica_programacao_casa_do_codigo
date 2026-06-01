@@ -7,15 +7,15 @@
     <script>
         function pulaLinha() {
             document.write("<br>");
-        };
+        }
         var calculaDiasDeVida = function(idade){
             var dias = idade * 365;
             return dias;
-        };
+        }
         var calculaBatimentos = function(dias) {
             var batimentos = dias * 24 * 60 * 80; 
             return batimentos;
-        };
+        }
         var idade = prompt("Quantos anos você tem?");
         var dias = calculaDiasDeVida(idade);
         var batimentos = calculaBatimentos(dias);
