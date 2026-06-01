@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        // função para colocar uma frase como variável e aplicar o pulo de linha automaticamente
+        function mostra(frase) {
+            document.write(frase + "<br>");
+        }
+        
+        var multiplicador = 1;
+        var numero = parseInt(prompt("Qual o número da tabuada desejada?"));
+
+        while(multiplicador <= 10) {
+            mostra(numero + " vezes " + multiplicador + " é igual a " + numero * multiplicador);
+            multiplicador = multiplicador +1;
+        }
+
+    </script>
+</body>
+</html>
