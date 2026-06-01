@@ -21,9 +21,9 @@
         };
         // aplicação de calculaIMC com variáveis pré existentes
         var nome = prompt("Olá! Qual é o seu nome?")
-        var altura = Math.round(prompt(nome + ", qual a sua altura?"));
-        var peso = Math.round(prompt(nome + ", qual o seu peso?"));
-        var imcDoUsuario = calculaIMC(altura, peso);
+        var altura = parseFloat(prompt(nome + ", qual a sua altura?"));
+        var peso = parseFloat(prompt(nome + ", qual o seu peso?"));
+        var imcDoUsuario = Math.round(calculaIMC(altura, peso));
         mostra(nome + ", seu IMC é de " + imcDoUsuario);
         mostra(nome + ", seu IMC está " + (imcDoUsuario - 18.5) + " pontos acima da magreza");
         mostra(nome + ", seu IMC está " + (35 - imcDoUsuario) + " pontos abaixo da obesidade");
