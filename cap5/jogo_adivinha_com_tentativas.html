@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        // função para colocar uma frase como variável e aplicar o pulo de linha automaticamente
+        function mostra(frase) {
+            document.write(frase + "<br>");
+        }
+
+        var numeroPensado = Math.round(Math.random() * 100);
+        var chute= -1;
+
+        while(chute != numeroPensado) {
+            chute = parseInt(prompt("Qual você acha que é?"));
+
+            if (chute == numeroPensado) {
+                mostra("Parabéns, você acertou!");
+            } else {
+                if (chute < numeroPensado) {
+                    mostra("Você errou. Seu número é menor!");
+                } else {
+                    mostra("Você errou. Seu número é maior!");
+                }
+                
+            }
+        }
+    </script>
+</body>
+</html>
