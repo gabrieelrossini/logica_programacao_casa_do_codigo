@@ -8,7 +8,7 @@
         // função para colocar uma frase como variável e aplicar o pulo de linha automaticamente
         function mostra(frase) {
             document.write(frase + "<br>");
-        }
+        };
 
         var anoComoTexto = prompt("Informe o ano inicial");
         var anoDeOlimpiada = parseInt(anoComoTexto);
@@ -18,7 +18,7 @@
         while(anoDeOlimpiada <= anoLimite) {
             mostra(anoDeOlimpiada + " tem Olimpíada!");
             anoDeOlimpiada= anoDeOlimpiada + 4;
-        }
+        };
 
         mostra("Ufa! Esses foram os anos de Olimpíada até " + anoLimite);
     </script>
