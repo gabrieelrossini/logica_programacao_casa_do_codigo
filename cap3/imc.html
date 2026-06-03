@@ -8,17 +8,17 @@
         // pular uma linha a cada frase
         function pulaLinha() {
             document.write("<br>");
-        }
+        };
         // colocar uma frase como variável e aplicar função pulaLinha
         var mostra = function(frase) {
             document.write(frase);
             pulaLinha();
-        }
+        };
         // calcular o imc e aplicar a função mostra
         var calculaIMC = function(altura, peso) {
             var imc = peso / (altura * altura);
             return imc;
-        }
+        };
         // aplicação de calculaIMC com variáveis pré existentes
         var nome = prompt("Olá! Qual é o seu nome?")
         var altura = prompt(nome + ", qual a sua altura?");

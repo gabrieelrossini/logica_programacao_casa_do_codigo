@@ -8,17 +8,17 @@
         // pular uma linha a cada frase
         function pulaLinha() {
             document.write("<br>");
-        }
+        };
         // colocar uma frase como variável e aplicar função pulaLinha
         function mostra(frase) {
             document.write(frase);
             pulaLinha();
-        }
+        };
         // calcular o imc e aplicar a função mostra
         function calculaIMC(altura, peso) {
             var imc = peso / (altura * altura);
             return imc;
-        }
+        };
         // aplicação de calculaIMC com variáveis pré existentes
         var nome = prompt("Olá! Qual é o seu nome?")
         var altura = parseFloat(prompt(nome + ", qual a sua altura?"));
@@ -30,15 +30,15 @@
 
         if(imcDoUsuario < 18.5) {
             mostra("Seu IMC indica que você está ABAIXO do peso.");
-        }
+        };
 
         if(imcDoUsuario > 35) {
             mostra("Seu IMC indica que você está ACIMA do peso.");
-        }
+        };
 
         if(imcDoUsuario >= 18.5 && imcDoUsuario <= 35) {
             mostra("OK! Seu IMC está entre os dois limites.");
-        }
+        };
     </script>
 </body>
 </html>

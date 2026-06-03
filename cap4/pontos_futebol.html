@@ -14,12 +14,12 @@
         function mostra(frase) {
             document.write(frase);
             pulaLinha();
-        }
+        };
 
         // função calculaPontos recebe o número de vitórias e empates, retornando o total de pontos
         function calculaPontos(vitorias, empates, derrotas) {
             return (vitorias * 3) + empates - derrotas;
-        }
+        };
 
         // perguntar para o usuário quantidade de vitórias e empates do time através da função prompt
         var vitorias = parseInt(prompt("Quantos jogos o CDC Futebol Clube venceu?"));
@@ -41,15 +41,15 @@
         // lógica aplicada para mostrar a colocação referente entre os dois times de acordo com os pontos
         if(pontos > pontos_adversario) {
             mostra("Nosso time está indo MELHOR que o Livros Velhos!");
-        }
+        };
         
         if(pontos < pontos_adversario) {
             mostra("Nosso time está indo PIOR que o Livros Velhos!");
-        }
+        };
 
         if(pontos == pontos_adversario) {
             mostra("Nosso time está EMPATANDO com o Livros Velhos!");
-        }
+        };
     </script>
 </body>
 </html>
