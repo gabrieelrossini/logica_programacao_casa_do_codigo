@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        var tamanho = parseInt(prompt("Qual o tamanho do V?"));
+
+        for(var linha = 0; linha < tamanho / 2; linha++) {
+            for(var coluna = 0; coluna < tamanho; coluna++) {
+                if (coluna == linha || coluna == tamanho - linha - 1){
+                    document.write("*");
+                } else {
+                    document.write("_");
+                }
+                
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>

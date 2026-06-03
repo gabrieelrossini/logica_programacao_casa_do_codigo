@@ -5,11 +5,16 @@
 </head>
 <body>
     <script>
-        var tamanho = parseInt(prompt("Qual o número de colunas e linhas?"));
+        var tamanho = 10;
 
         for(var linha = 0; linha < tamanho; linha++) {
             for(var coluna = 0; coluna < tamanho; coluna++) {
-                document.write("*");
+                if (coluna == linha || coluna == tamanho - linha - 1) {
+                    document.write("*");
+                } else {
+                    document.write("_");
+                }
+                
             }
             document.write("<br>");
         }

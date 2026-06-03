@@ -5,10 +5,10 @@
 </head>
 <body>
     <script>
-        var tamanho = parseInt(prompt("Qual o número de colunas e linhas?"));
+        var tamanho = parseInt(prompt("Quantas linhas terá o triângulo?"));
 
         for(var linha = 0; linha < tamanho; linha++) {
-            for(var coluna = 0; coluna < tamanho; coluna++) {
+            for(var coluna = 0; coluna <= linha; coluna++) {
                 document.write("*");
             }
             document.write("<br>");
