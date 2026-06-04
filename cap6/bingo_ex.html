@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <input type="text" id="numero">
+    <input type="submit" value="Adicine seis números e boa sorte!" id="adicionar">
+    <script>
+        var numerosSorteados = [];
+
+        while(numerosSorteados.length < 6) {
+            var numero = Math.round(Math.random() * 59 + 1);
+            var jaExiste = false;
+            for(var i = 0; i < numerosSorteados.length; i++) {
+                if(numerosSorteados[i] == numero) {
+                    jaExiste = true;
+                }               
+            }
+            if(!jaExiste) {
+                numerosSorteados.push(numero);
+            }
+        };
+
+        console.log(numerosSorteados)
+
+        var numerosUsuario = [];
+
+        function adicionarSorteado() {
+            var numero = parseInt(document.getElementById("numero").value);
+            for(var i = 0; i < numerosUsuario.length; i++) {
+                if(numerosUsuario[i] == numero) {
+                    alert("Numero já digitado!");
+                    return;
+                }
+            }
+            if(numerosUsuario.length < 6) {
+                numerosUsuario.push(numero);
+            }
+            console.log(numerosUsuario);
+        };
+
+        var botao = document.getElementById("adicionar");
+        botao.onclick = adicionarSorteado;
+    </script>
+</body>
+</html>
