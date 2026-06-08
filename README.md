@@ -1,22 +1,19 @@
 # Lógica de Programação - Casa do Código
 
-Repositório com exercícios do livro **Lógica de Programação** da Casa do Código, desenvolvidos em JavaScript.
+Repositório contendo a resolução dos exercícios e desafios propostos no livro **"Lógica de Programação"** da editora Casa do Código, desenvolvidos em **JavaScript** puro e **HTML**.
 
-## Estrutura
+> **Status do Projeto:** Em andamento (Concluído até o Capítulo 6)
 
-- `cap1_cap2/` — Exercícios dos capítulos 1 e 2 (variáveis, operadores, tipos de dados)
-- `cap3/` — Exercícios do capítulo 3
+## Tecnologias Utilizadas
+- HTML5
+- JavaScript (Vanilla JS)
 
-## Como executar
+## Estrutura do Repositório
+O projeto está organizado por capítulos para facilitar a navegação e o acompanhamento do aprendizado:
 
-Basta abrir os arquivos `.html` em um navegador web.
-
-## Conteúdo
-
-### Capítulos 1 e 2
-- Hello World com `alert` e `document.write`
-- Variáveis e tipos de dados
-- Operadores aritméticos
-- Concatenação de strings
-- Trabalhando com decimais (`toFixed`, `Math.round`)
-- Exercício: cálculo de consumo (álcool vs gasolina)
+```text
+├── cap1_cap2/    # Fundamentos, variáveis, tipos de dados e funções básicas
+├── cap3/         # Funções com parâmetros, retorno e interação com o usuário (prompt)
+├── cap4/         # Estruturas condicionais (if/else) e operadores lógicos
+├── cap5/         # Estruturas de repetição (while, for) e loops aninhados
+└── cap6/         # Arrays (vetores), manipulação de listas e validação de dados
