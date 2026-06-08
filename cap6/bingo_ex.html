@@ -5,7 +5,7 @@
 </head>
 <body>
     <input type="text" id="numero">
-    <input type="submit" value="Adicine seis números e boa sorte!" id="adicionar">
+    <input type="submit" value="Adicione seis números e boa sorte!" id="adicionar">
     <script>
         var numerosSorteados = [];
 
@@ -37,7 +37,20 @@
             if(numerosUsuario.length < 6) {
                 numerosUsuario.push(numero);
             }
+            if(numerosUsuario. length === 6) {
+                var acertos = 0;
+                for (var i = 0; i < numerosUsuario.length; i++) {
+                    var chuteAtual = numerosUsuario[i];
+                    for (var j = 0; j < numerosSorteados.length; j++) {
+                        if (chuteAtual == numerosSorteados[j]) {
+                            acertos = acertos + 1;
+                        }
+                    }
+                }
+                alert("Fim de jogo! Você acertou " + acertos + " números.");
+            }
             console.log(numerosUsuario);
+            
         };
 
         var botao = document.getElementById("adicionar");
